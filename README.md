@@ -40,19 +40,15 @@ The system is designed to assist **police departments, smart city systems, insur
 - Sends **Telegram alerts** with:
   - Location  
   - Timestamp  
-  - Confidence  
   - Image evidence  
 
 ### 🤖 **3. Agent-Based RAG LLM Chatbot**
 Ask questions like:
 - *“Show me all accidents from last week”*  
-- *“Which camera has most violations?”*  
 - *“Email me a report of today’s detections.”*
 
 The agent uses:
-- SQL tool  
-- Vector search tool  
-- S3 bucket fetcher  
+- SQL tool    
 - PDF report tool  
 - Email sender tool  
 
@@ -62,12 +58,6 @@ The agent uses:
 - Proof images  
 - System insights  
 - Delivered as PDF or email attachment  
-
-### ☁️ **5. Cloud Integration**
-- **AWS S3** → stores images  
-- **AWS RDS PostgreSQL** → stores logs  
-- **EC2** → runs Streamlit application  
-- **Telegram Bot API** → alert system  
 
 ---
 
@@ -99,16 +89,13 @@ Classes:
 - Accident  
 
 ### **2️⃣ Streamlit Web Application**
-- Image/Video upload  
-- Live detections  
+- Image/Video upload   
 - Dashboard insights  
 
 ### **3️⃣ Cloud Logging**
 Each detection stored with:
-- Timestamp  
-- Location/Camera  
+- Timestamp    
 - Class label  
-- Confidence  
 - Proof image link  
 
 ### **4️⃣ RAG LLM Agent**
@@ -149,7 +136,7 @@ Each detection stored with:
 - Export to `best.pt`  
 
 ### **2. Streamlit App**
-- Detection UI  
+- Detection UI
 - Dashboard insights  
 
 ### **3. Accident Alert System**
@@ -157,11 +144,11 @@ Each detection stored with:
 - Stores panic frames  
 
 ### **4. RAG Chatbot**
-- Answer queries using DB & S3  
+- Answer queries using DB  
 - Agent-based architecture  
 
 ### **5. PDF & Email Reporting**
-- Weekly/daily automated reports  
+- Weekly/daily reports  
 
 ---
 
@@ -175,10 +162,7 @@ Each detection stored with:
 
 ## **📑 Deliverables**
 - YOLO training notebooks  
-- Streamlit application (`main.py`)  
-- EC2 deployment script  
-- RDS schema + vector search  
-- S3 bucket structure  
+- Streamlit application (`main.py`)   
 - Telegram bot setup  
 - RAG Chatbot  
 - Reporting system  
